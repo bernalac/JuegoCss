@@ -18,12 +18,12 @@ body{
     text-align:center; width: 100%;
 }
 
-#side1{box-shadow: 0 0 0 8px #41C3AC}
-#side2{box-shadow: 0 0 0 8px #FF884D}
-#side3{box-shadow: 0 0 0 8px #32526E}
-#side4{box-shadow: 0 0 0 8px #65A2C5}
-#side5{box-shadow: 0 0 0 8px #FFCC5C}
-#side6{box-shadow: 0 0 0 8px #FF5557}
+#side1{box-shadow: 0 0 0 8px #EF9A9A}
+#side2{box-shadow: 0 0 0 8px #EF5350}
+#side3{box-shadow: 0 0 0 8px #E53935}
+#side4{box-shadow: 0 0 0 8px #FF1744}
+#side5{box-shadow: 0 0 0 8px #C62828}
+#side6{box-shadow: 0 0 0 8px #FF7514}
 input:checked{ box-shadow: 0 0 0 8px #333 !important}
 .side:hover{z-index: 9999;}
 
@@ -34,8 +34,8 @@ input:checked{ box-shadow: 0 0 0 8px #333 !important}
           transform-origin:50% 50%;
   -webkit-transform-style:preserve-3d;
           transform-style:preserve-3d;
-  -webkit-animation:rotate 8s infinite ease-in-out;
-          animation:rotate 8s infinite ease-in-out;
+  -webkit-animation:rotate 5s infinite ease-in-out;
+          animation:rotate 5s infinite ease-in-out;
   
 }
 .side{
@@ -45,32 +45,32 @@ input:checked{ box-shadow: 0 0 0 8px #333 !important}
   width:200px;
 }
 .side1{
-  background:#41C3AC;
+  background: #EF9A9A;
   -webkit-transform:translateZ(100px);
           transform:translateZ(100px);
 }
 .side2{
-  background:#FF884D; 
+  background: #EF5350; 
   -webkit-transform:rotateY(90deg) translateZ(100px);
           transform:rotateY(90deg) translateZ(100px);
 }
 .side3{
-  background:#32526E; 
+  background:#E53935; 
   -webkit-transform:rotateY(180deg) translateZ(100px);
           transform:rotateY(180deg) translateZ(100px);
 }
 .side4{
-  background:#65A2C5;
+  background:#FF1744;
   -webkit-transform:rotateY(-90deg) translateZ(100px);
           transform:rotateY(-90deg) translateZ(100px);
 }
 .side5{
-  background:#FFCC5C;
+  background:#C62828;
   -webkit-transform:rotateX(90deg) translateZ(100px);
           transform:rotateX(90deg) translateZ(100px);
 }
 .side6{
-  background:#FF5557;
+  background:#FF7514;
   -webkit-transform:rotateX(-90deg) translateZ(100px);
           transform:rotateX(-90deg) translateZ(100px);
 }
@@ -113,7 +113,7 @@ input:checked{ box-shadow: 0 0 0 8px #333 !important}
 /* Elementos Check para comprobar si se ha hecho clic o no en orden en el cuadrado*/
 
 input:checked  + input:checked +input:checked +input:checked +input:checked + input:checked ~ .resultado:before{display:block;}
-input:checked  + input:checked +input:checked +input:checked +input:checked + input:checked ~ .nextlevel{visibility:visible;}
+input:checked  + input:checked +input:checked +input:checked +input:checked + input:checked ~ .levelant{visibility:visible;}
 input:checked  + input:checked +input:checked +input:checked +input:checked + input:checked ~ .resultado:after{display:none;}
 
 
@@ -157,13 +157,13 @@ En este caso, 50, que es justo en el medio.*/
 
 /*Pruebas*/
 
-.nextlevel{
+.levelant{
   all: revert;
   visibility: hidden;
   position:absolute;
   bottom:10%;
   padding-top: 17px;
-  left: 70%;
+  left: 30%;
   width: 140px;
   border-radius: 100px;
   height: 40px;
